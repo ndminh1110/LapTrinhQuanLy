@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,3 +17,23 @@ namespace QuanLyBanHang.Data
         public virtual ObservableCollectionListSource<SanPham> SanPham { get; } = new();
     }
 }
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+
+
+namespace QuanLyBanHang.Data
+{
+    public class LoaiSanPham
+    {
+        public int ID { get; set; }
+        public string TenLoai { get; set; }
+        public virtual ObservableCollectionListSource<SanPham> SanPham { get; } = new();
+    }
+}
+>>>>>>> 9429d92d5ea5bc6911bd574c5ced92d229d18244

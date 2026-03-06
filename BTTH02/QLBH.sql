@@ -1,4 +1,5 @@
-﻿USE QLBH;
+﻿USE QuanLyBanHang;
+GO
 
 -- Xóa dữ liệu các bảng cũ (Nếu có)
 DELETE FROM HoaDon_ChiTiet;
@@ -58,6 +59,9 @@ INSERT INTO NhanVien(HoVaTen, DienThoai, DiaChi, TenDangNhap, MatKhau, QuyenHan)
 (N'Nguyễn Văn An', '0123456888', 'Long Xuyên', 'admin', '$2a$11$XGOVk9m4HqzXBlwVvhKN/ur8FS/keV9QyuCwikTL67sL0gqNUupMa', 1),
 (N'Hoàng Thảo My', '0123456999', 'Châu Thành', 'user', '$2a$11$c1syEtekaZ6OJrX77mGoJ.6mu4YuUjUHvKrliW8oOU3M3u7I6zyuy', 0);
 
+--INSERT INTO NhanVien(HoVaTen, DienThoai, DiaChi, TenDangNhap, MatKhau, QuyenHan) VALUES (N'Hoàng Thảo My', '0123456999', 'Châu Thành', 'user', '', 0);
+
+
 INSERT INTO KhachHang(HoVaTen, DienThoai, DiaChi) VALUES
 (N'Lê Thị Kim Yến', '0123456777', 'Chợ Mới'),
 (N'Võ Huỳnh Đông', '0123456555', 'Lấp Vò - Đồng Tháp'),
@@ -77,4 +81,7 @@ INSERT INTO SanPham(LoaiSanPhamID, HangSanXuatID, TenSanPham, DonGia, SoLuong, H
 (1, 2, N'iPhone 15 Pro Max', 34990000, 100, 'iphone-15-pro-max.jpg');
 
 
+
 select * from SanPham
+select * from LoaiSanPham
+select * from NhanVien
